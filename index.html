@@ -17,6 +17,9 @@
             color: white;
             padding: 1em 0;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style: none;
@@ -45,6 +48,17 @@
             text-align: center;
             padding: 1em 0;
         }
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 1em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 999;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -63,18 +77,48 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Brief introduction about yourself.</p>
+            <p>I am a final year Electrical and Computer Engineering student at the University of Cape Town.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a porta turpis, eu luctus eros. Duis eu lacus sapien. Sed quam augue, porttitor dapibus odio vel, imperdiet volutpat diam. Suspendisse eu ex justo. Suspendisse malesuada magna vel felis aliquet, non dapibus libero imperdiet. Sed laoreet ut tortor gravida vulputate. In massa purus, tempus quis faucibus rhoncus, viverra eu nisi. Nunc elementum purus felis, non ullamcorper nulla sagittis in. Vivamus at eleifend velit, id lacinia felis. Vestibulum malesuada diam fermentum libero egestas facilisis.
+
+Maecenas lobortis justo ultricies erat ultrices imperdiet. Aliquam erat volutpat. Cras convallis, elit vitae ultrices posuere, diam sem molestie ante, a hendrerit ex elit a elit. Vestibulum mi sem, interdum in tincidunt ullamcorper, luctus eget augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero tortor. Praesent ut iaculis ante.
+
+Suspendisse id felis luctus, pharetra eros id, tempus mauris. Suspendisse sit amet ante tincidunt, eleifend risus vel, pharetra justo. Integer suscipit est erat, quis iaculis velit semper sit amet. Integer faucibus mi in interdum fermentum. Curabitur sit amet varius eros, at feugiat nisi. Donec lacus risus, venenatis sed efficitur nec, commodo nec est. Cras condimentum, purus id consequat hendrerit, ligula est gravida ipsum, non ullamcorper sem nisl quis enim. Nunc laoreet elementum enim. Nullam eget ante congue, placerat est nec, commodo neque. Proin consectetur nunc massa. Quisque augue mi, pulvinar in ligula sit amet, auctor ultricies nulla. Sed sit amet est ante. Proin sed porttitor justo. Nullam pretium pretium elit, at feugiat risus euismod et.
+
+In hac habitasse platea dictumst. Donec et nulla ut quam dignissim ultrices. Duis scelerisque felis eget elementum varius. Aenean risus erat, porta ut nisi et, vehicula consectetur lectus. Sed lobortis mi at orci ultrices, ac dignissim leo consequat. Donec metus nisl, pharetra sit amet neque at, pretium consequat dui. Praesent eros ante, faucibus vel dolor vel, convallis ornare ipsum. Aliquam congue id libero dapibus interdum. Mauris tempor faucibus enim ac posuere. Sed feugiat augue ac dui consequat, nec suscipit velit tincidunt. Praesent eu vulputate quam. Nam aliquet enim et vulputate bibendum. Praesent eros nunc, fringilla id euismod elementum, varius vitae ex. Nulla vel venenatis magna.
+
+Phasellus tempus, lacus facilisis imperdiet iaculis, nulla tortor consequat libero, consequat rhoncus velit purus eu metus. Vivamus at risus in ante scelerisque laoreet eu a ante. Nam et lobortis enim. Sed eu eleifend purus, eget posuere magna. Morbi mauris urna, venenatis quis tortor ut, volutpat pretium velit. Praesent varius viverra erat, ac vestibulum felis feugiat eget. Suspendisse potenti. Cras mollis felis ut porta pretium.
+            </p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Project Title 1</h3>
-                <p>Description of the project.</p>
+                <p>Description of the project.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a porta turpis, eu luctus eros. Duis eu lacus sapien. Sed quam augue, porttitor dapibus odio vel, imperdiet volutpat diam. Suspendisse eu ex justo. Suspendisse malesuada magna vel felis aliquet, non dapibus libero imperdiet. Sed laoreet ut tortor gravida vulputate. In massa purus, tempus quis faucibus rhoncus, viverra eu nisi. Nunc elementum purus felis, non ullamcorper nulla sagittis in. Vivamus at eleifend velit, id lacinia felis. Vestibulum malesuada diam fermentum libero egestas facilisis.
+
+Maecenas lobortis justo ultricies erat ultrices imperdiet. Aliquam erat volutpat. Cras convallis, elit vitae ultrices posuere, diam sem molestie ante, a hendrerit ex elit a elit. Vestibulum mi sem, interdum in tincidunt ullamcorper, luctus eget augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero tortor. Praesent ut iaculis ante.
+
+Suspendisse id felis luctus, pharetra eros id, tempus mauris. Suspendisse sit amet ante tincidunt, eleifend risus vel, pharetra justo. Integer suscipit est erat, quis iaculis velit semper sit amet. Integer faucibus mi in interdum fermentum. Curabitur sit amet varius eros, at feugiat nisi. Donec lacus risus, venenatis sed efficitur nec, commodo nec est. Cras condimentum, purus id consequat hendrerit, ligula est gravida ipsum, non ullamcorper sem nisl quis enim. Nunc laoreet elementum enim. Nullam eget ante congue, placerat est nec, commodo neque. Proin consectetur nunc massa. Quisque augue mi, pulvinar in ligula sit amet, auctor ultricies nulla. Sed sit amet est ante. Proin sed porttitor justo. Nullam pretium pretium elit, at feugiat risus euismod et.
+
+In hac habitasse platea dictumst. Donec et nulla ut quam dignissim ultrices. Duis scelerisque felis eget elementum varius. Aenean risus erat, porta ut nisi et, vehicula consectetur lectus. Sed lobortis mi at orci ultrices, ac dignissim leo consequat. Donec metus nisl, pharetra sit amet neque at, pretium consequat dui. Praesent eros ante, faucibus vel dolor vel, convallis ornare ipsum. Aliquam congue id libero dapibus interdum. Mauris tempor faucibus enim ac posuere. Sed feugiat augue ac dui consequat, nec suscipit velit tincidunt. Praesent eu vulputate quam. Nam aliquet enim et vulputate bibendum. Praesent eros nunc, fringilla id euismod elementum, varius vitae ex. Nulla vel venenatis magna.
+
+Phasellus tempus, lacus facilisis imperdiet iaculis, nulla tortor consequat libero, consequat rhoncus velit purus eu metus. Vivamus at risus in ante scelerisque laoreet eu a ante. Nam et lobortis enim. Sed eu eleifend purus, eget posuere magna. Morbi mauris urna, venenatis quis tortor ut, volutpat pretium velit. Praesent varius viverra erat, ac vestibulum felis feugiat eget. Suspendisse potenti. Cras mollis felis ut porta pretium.
+                </p>
             </div>
             <div class="project">
                 <h3>Project Title 2</h3>
-                <p>Description of the project.</p>
+                <p>Description of the project.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a porta turpis, eu luctus eros. Duis eu lacus sapien. Sed quam augue, porttitor dapibus odio vel, imperdiet volutpat diam. Suspendisse eu ex justo. Suspendisse malesuada magna vel felis aliquet, non dapibus libero imperdiet. Sed laoreet ut tortor gravida vulputate. In massa purus, tempus quis faucibus rhoncus, viverra eu nisi. Nunc elementum purus felis, non ullamcorper nulla sagittis in. Vivamus at eleifend velit, id lacinia felis. Vestibulum malesuada diam fermentum libero egestas facilisis.
+
+Maecenas lobortis justo ultricies erat ultrices imperdiet. Aliquam erat volutpat. Cras convallis, elit vitae ultrices posuere, diam sem molestie ante, a hendrerit ex elit a elit. Vestibulum mi sem, interdum in tincidunt ullamcorper, luctus eget augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero tortor. Praesent ut iaculis ante.
+
+Suspendisse id felis luctus, pharetra eros id, tempus mauris. Suspendisse sit amet ante tincidunt, eleifend risus vel, pharetra justo. Integer suscipit est erat, quis iaculis velit semper sit amet. Integer faucibus mi in interdum fermentum. Curabitur sit amet varius eros, at feugiat nisi. Donec lacus risus, venenatis sed efficitur nec, commodo nec est. Cras condimentum, purus id consequat hendrerit, ligula est gravida ipsum, non ullamcorper sem nisl quis enim. Nunc laoreet elementum enim. Nullam eget ante congue, placerat est nec, commodo neque. Proin consectetur nunc massa. Quisque augue mi, pulvinar in ligula sit amet, auctor ultricies nulla. Sed sit amet est ante. Proin sed porttitor justo. Nullam pretium pretium elit, at feugiat risus euismod et.
+
+In hac habitasse platea dictumst. Donec et nulla ut quam dignissim ultrices. Duis scelerisque felis eget elementum varius. Aenean risus erat, porta ut nisi et, vehicula consectetur lectus. Sed lobortis mi at orci ultrices, ac dignissim leo consequat. Donec metus nisl, pharetra sit amet neque at, pretium consequat dui. Praesent eros ante, faucibus vel dolor vel, convallis ornare ipsum. Aliquam congue id libero dapibus interdum. Mauris tempor faucibus enim ac posuere. Sed feugiat augue ac dui consequat, nec suscipit velit tincidunt. Praesent eu vulputate quam. Nam aliquet enim et vulputate bibendum. Praesent eros nunc, fringilla id euismod elementum, varius vitae ex. Nulla vel venenatis magna.
+
+Phasellus tempus, lacus facilisis imperdiet iaculis, nulla tortor consequat libero, consequat rhoncus velit purus eu metus. Vivamus at risus in ante scelerisque laoreet eu a ante. Nam et lobortis enim. Sed eu eleifend purus, eget posuere magna. Morbi mauris urna, venenatis quis tortor ut, volutpat pretium velit. Praesent varius viverra erat, ac vestibulum felis feugiat eget. Suspendisse potenti. Cras mollis felis ut porta pretium.
+                </p>
             </div>
         </section>
 
@@ -89,12 +133,32 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Email: <a href="mailto:murrayinglis101@gmail.com">murrayinglis101@gmail.com</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Murray Inglis. All rights reserved.</p>
     </footer>
+    <script>
+        const sections = document.querySelectorAll('main section');
+        const stickyHeader = document.getElementById('sticky-header');
+
+        window.addEventListener('scroll', () => {
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 60;
+                if (pageYOffset >= sectionTop) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            if (currentSection) {
+                const currentHeader = document.querySelector(`section#${currentSection} h2`).textContent;
+                stickyHeader.textContent = currentHeader;
+            }
+        });
+    </script>
 </body>
 </html>
