@@ -130,11 +130,15 @@ footer {
 }
 
 .project img {
-    max-width: 40%; /* Ensure the image takes up a reasonable portion of the space */
+    max-width: 100%; /* Ensure the image takes up a reasonable portion of the space */
     aspect-ratio: 1 / 1; /* Ensure the image has equal width and height */
     object-fit: cover; /* Ensure the image covers the container */
     border-radius: 8px; /* Rounded corners for the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: border 0.3s ease;
+}
+.project-content a:hover img {
+    border: 3px solid #ffcc00; /* Highlight border color */
 }
 
 .project-content div {
@@ -146,6 +150,13 @@ footer {
     font-size: 16px; /* Adjust the font size as needed */
     line-height: 1.5; /* Improve readability */
     color: #000000; /* Darker text color for better contrast */
+}
+
+.project-content a {
+    display: block; /* Ensures the anchor tag behaves as a block element */
+    width: 100%; /* Makes the anchor tag take up the full width of its container */
+    max-width: 300px; /* Optionally set a maximum width for the anchor */
+    height: auto; /* Automatically adjusts height based on content */
 }
 
 .skills-content {
