@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My ePortfolio</title>
+    <title>Murray Inglis ePortfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -13,7 +13,7 @@
             padding: 0;
         }
         header {
-            background-color: #333;
+            background-color: #441414;
             color: white;
             padding: 1em 0;
             text-align: center;
@@ -34,13 +34,14 @@
             text-decoration: none;
         }
         main {
-            padding: 2em;
+            padding: 0;
         }
         section {
             margin-bottom: 2em;
         }
         h1, h2, h3 {
             text-align: center;
+            padding: 0;
         }
         footer {
             background-color: #333;
@@ -59,11 +60,91 @@
             z-index: 999;
             text-align: center;
         }
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                        background-color: #f9f9f9; /* Light background color for better contrast */
+            padding: 20px; /* Padding inside each project box */
+            border-radius: 8px; /* Rounded corners for a modern look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9; /* Light background color for better contrast */
+            padding: 20px; /* Padding inside each project box */
+            border-radius: 8px; /* Rounded corners for a modern look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .about-content img {
+            margin-right: 20px;
+            width: 600px; /* Adjust the width as needed */
+            height: auto;
+            object-fit: cover; /* Ensure the image covers the container */
+            border-radius: 8px; /* Rounded corners for the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .about-content div {
+            flex: 1;
+        }
+        .about-content p {
+            margin: 0; /* Remove default margins */
+            font-size: 16px; /* Adjust the font size as needed */
+            line-height: 1.5; /* Improve readability */
+            color: #000000; /* Darker text color for better contrast */
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust the gap between projects as needed */
+        }
+
+        .project {
+            flex: 1 1 calc(50% - 20px); /* Adjust the calculation if you change the gap */
+            box-sizing: border-box;
+            background-color: #f9f9f9; /* Light background color for better contrast */
+            padding: 20px; /* Padding inside each project box */
+            border-radius: 8px; /* Rounded corners for a modern look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .project-content {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Adjust the gap between image and text as needed */
+        }
+
+        .project img {
+            max-width: 40%; /* Ensure the image takes up a reasonable portion of the space */
+            aspect-ratio: 1 / 1; /* Ensure the image has equal width and height */
+            object-fit: cover; /* Ensure the image covers the container */
+            border-radius: 8px; /* Rounded corners for the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .project-content div {
+            flex: 1; /* Make the text container take up the remaining space */
+        }
+
+        .project-content p {
+            margin: 0; /* Remove default margins */
+            font-size: 16px; /* Adjust the font size as needed */
+            line-height: 1.5; /* Improve readability */
+            color: #000000; /* Darker text color for better contrast */
+        }
+        #skills {
+
+        }
+        #contact {
+
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>My ePortfolio</h1>
+        <h1>Murray Inglis</h1>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -77,50 +158,68 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a final year Electrical and Computer Engineering student at the University of Cape Town.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a porta turpis, eu luctus eros. Duis eu lacus sapien. Sed quam augue, porttitor dapibus odio vel, imperdiet volutpat diam. Suspendisse eu ex justo. Suspendisse malesuada magna vel felis aliquet, non dapibus libero imperdiet. Sed laoreet ut tortor gravida vulputate. In massa purus, tempus quis faucibus rhoncus, viverra eu nisi. Nunc elementum purus felis, non ullamcorper nulla sagittis in. Vivamus at eleifend velit, id lacinia felis. Vestibulum malesuada diam fermentum libero egestas facilisis.
-
-Maecenas lobortis justo ultricies erat ultrices imperdiet. Aliquam erat volutpat. Cras convallis, elit vitae ultrices posuere, diam sem molestie ante, a hendrerit ex elit a elit. Vestibulum mi sem, interdum in tincidunt ullamcorper, luctus eget augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero tortor. Praesent ut iaculis ante.
-
-Suspendisse id felis luctus, pharetra eros id, tempus mauris. Suspendisse sit amet ante tincidunt, eleifend risus vel, pharetra justo. Integer suscipit est erat, quis iaculis velit semper sit amet. Integer faucibus mi in interdum fermentum. Curabitur sit amet varius eros, at feugiat nisi. Donec lacus risus, venenatis sed efficitur nec, commodo nec est. Cras condimentum, purus id consequat hendrerit, ligula est gravida ipsum, non ullamcorper sem nisl quis enim. Nunc laoreet elementum enim. Nullam eget ante congue, placerat est nec, commodo neque. Proin consectetur nunc massa. Quisque augue mi, pulvinar in ligula sit amet, auctor ultricies nulla. Sed sit amet est ante. Proin sed porttitor justo. Nullam pretium pretium elit, at feugiat risus euismod et.
-
-In hac habitasse platea dictumst. Donec et nulla ut quam dignissim ultrices. Duis scelerisque felis eget elementum varius. Aenean risus erat, porta ut nisi et, vehicula consectetur lectus. Sed lobortis mi at orci ultrices, ac dignissim leo consequat. Donec metus nisl, pharetra sit amet neque at, pretium consequat dui. Praesent eros ante, faucibus vel dolor vel, convallis ornare ipsum. Aliquam congue id libero dapibus interdum. Mauris tempor faucibus enim ac posuere. Sed feugiat augue ac dui consequat, nec suscipit velit tincidunt. Praesent eu vulputate quam. Nam aliquet enim et vulputate bibendum. Praesent eros nunc, fringilla id euismod elementum, varius vitae ex. Nulla vel venenatis magna.
-
-Phasellus tempus, lacus facilisis imperdiet iaculis, nulla tortor consequat libero, consequat rhoncus velit purus eu metus. Vivamus at risus in ante scelerisque laoreet eu a ante. Nam et lobortis enim. Sed eu eleifend purus, eget posuere magna. Morbi mauris urna, venenatis quis tortor ut, volutpat pretium velit. Praesent varius viverra erat, ac vestibulum felis feugiat eget. Suspendisse potenti. Cras mollis felis ut porta pretium.
-            </p>
+            <div class="about-content">
+                <img src="headshot.png" alt="Picture of Me">
+                <div>
+                    <p>I am a final year Electrical and Computer Engineering student at the University of Cape Town.
+                        I was born in the United Kingdom and have lived the rest of my life in Cape Town, South Africa.
+                        I am writing my dissertation on a Software-Defined Radar demonstration. 
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Description of the project.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a porta turpis, eu luctus eros. Duis eu lacus sapien. Sed quam augue, porttitor dapibus odio vel, imperdiet volutpat diam. Suspendisse eu ex justo. Suspendisse malesuada magna vel felis aliquet, non dapibus libero imperdiet. Sed laoreet ut tortor gravida vulputate. In massa purus, tempus quis faucibus rhoncus, viverra eu nisi. Nunc elementum purus felis, non ullamcorper nulla sagittis in. Vivamus at eleifend velit, id lacinia felis. Vestibulum malesuada diam fermentum libero egestas facilisis.
-
-Maecenas lobortis justo ultricies erat ultrices imperdiet. Aliquam erat volutpat. Cras convallis, elit vitae ultrices posuere, diam sem molestie ante, a hendrerit ex elit a elit. Vestibulum mi sem, interdum in tincidunt ullamcorper, luctus eget augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero tortor. Praesent ut iaculis ante.
-
-Suspendisse id felis luctus, pharetra eros id, tempus mauris. Suspendisse sit amet ante tincidunt, eleifend risus vel, pharetra justo. Integer suscipit est erat, quis iaculis velit semper sit amet. Integer faucibus mi in interdum fermentum. Curabitur sit amet varius eros, at feugiat nisi. Donec lacus risus, venenatis sed efficitur nec, commodo nec est. Cras condimentum, purus id consequat hendrerit, ligula est gravida ipsum, non ullamcorper sem nisl quis enim. Nunc laoreet elementum enim. Nullam eget ante congue, placerat est nec, commodo neque. Proin consectetur nunc massa. Quisque augue mi, pulvinar in ligula sit amet, auctor ultricies nulla. Sed sit amet est ante. Proin sed porttitor justo. Nullam pretium pretium elit, at feugiat risus euismod et.
-
-In hac habitasse platea dictumst. Donec et nulla ut quam dignissim ultrices. Duis scelerisque felis eget elementum varius. Aenean risus erat, porta ut nisi et, vehicula consectetur lectus. Sed lobortis mi at orci ultrices, ac dignissim leo consequat. Donec metus nisl, pharetra sit amet neque at, pretium consequat dui. Praesent eros ante, faucibus vel dolor vel, convallis ornare ipsum. Aliquam congue id libero dapibus interdum. Mauris tempor faucibus enim ac posuere. Sed feugiat augue ac dui consequat, nec suscipit velit tincidunt. Praesent eu vulputate quam. Nam aliquet enim et vulputate bibendum. Praesent eros nunc, fringilla id euismod elementum, varius vitae ex. Nulla vel venenatis magna.
-
-Phasellus tempus, lacus facilisis imperdiet iaculis, nulla tortor consequat libero, consequat rhoncus velit purus eu metus. Vivamus at risus in ante scelerisque laoreet eu a ante. Nam et lobortis enim. Sed eu eleifend purus, eget posuere magna. Morbi mauris urna, venenatis quis tortor ut, volutpat pretium velit. Praesent varius viverra erat, ac vestibulum felis feugiat eget. Suspendisse potenti. Cras mollis felis ut porta pretium.
-                </p>
-            </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Description of the project.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a porta turpis, eu luctus eros. Duis eu lacus sapien. Sed quam augue, porttitor dapibus odio vel, imperdiet volutpat diam. Suspendisse eu ex justo. Suspendisse malesuada magna vel felis aliquet, non dapibus libero imperdiet. Sed laoreet ut tortor gravida vulputate. In massa purus, tempus quis faucibus rhoncus, viverra eu nisi. Nunc elementum purus felis, non ullamcorper nulla sagittis in. Vivamus at eleifend velit, id lacinia felis. Vestibulum malesuada diam fermentum libero egestas facilisis.
-
-Maecenas lobortis justo ultricies erat ultrices imperdiet. Aliquam erat volutpat. Cras convallis, elit vitae ultrices posuere, diam sem molestie ante, a hendrerit ex elit a elit. Vestibulum mi sem, interdum in tincidunt ullamcorper, luctus eget augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero tortor. Praesent ut iaculis ante.
-
-Suspendisse id felis luctus, pharetra eros id, tempus mauris. Suspendisse sit amet ante tincidunt, eleifend risus vel, pharetra justo. Integer suscipit est erat, quis iaculis velit semper sit amet. Integer faucibus mi in interdum fermentum. Curabitur sit amet varius eros, at feugiat nisi. Donec lacus risus, venenatis sed efficitur nec, commodo nec est. Cras condimentum, purus id consequat hendrerit, ligula est gravida ipsum, non ullamcorper sem nisl quis enim. Nunc laoreet elementum enim. Nullam eget ante congue, placerat est nec, commodo neque. Proin consectetur nunc massa. Quisque augue mi, pulvinar in ligula sit amet, auctor ultricies nulla. Sed sit amet est ante. Proin sed porttitor justo. Nullam pretium pretium elit, at feugiat risus euismod et.
-
-In hac habitasse platea dictumst. Donec et nulla ut quam dignissim ultrices. Duis scelerisque felis eget elementum varius. Aenean risus erat, porta ut nisi et, vehicula consectetur lectus. Sed lobortis mi at orci ultrices, ac dignissim leo consequat. Donec metus nisl, pharetra sit amet neque at, pretium consequat dui. Praesent eros ante, faucibus vel dolor vel, convallis ornare ipsum. Aliquam congue id libero dapibus interdum. Mauris tempor faucibus enim ac posuere. Sed feugiat augue ac dui consequat, nec suscipit velit tincidunt. Praesent eu vulputate quam. Nam aliquet enim et vulputate bibendum. Praesent eros nunc, fringilla id euismod elementum, varius vitae ex. Nulla vel venenatis magna.
-
-Phasellus tempus, lacus facilisis imperdiet iaculis, nulla tortor consequat libero, consequat rhoncus velit purus eu metus. Vivamus at risus in ante scelerisque laoreet eu a ante. Nam et lobortis enim. Sed eu eleifend purus, eget posuere magna. Morbi mauris urna, venenatis quis tortor ut, volutpat pretium velit. Praesent varius viverra erat, ac vestibulum felis feugiat eget. Suspendisse potenti. Cras mollis felis ut porta pretium.
-                </p>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Raspberry Pi Acoustic Triangulation</h3>
+                    <div class="project-content">
+                        <img src="AcousticTriangulation.png" alt="Acoustic Triangulation Visualisation">
+                        <div>
+                            <p>An array of 4 microphones is set up on a grid and the time delay on arrival of a sound source within
+                                the grid, 3 hyperbolic equations can be developed and solved to estimate the position of the sound
+                                source.
+                            </p>
+                            <p>This project utilized 2 Raspberry Pi Zero W's and 4 Adafruit microphones. Python scripts are used to
+                                initiate data recording and transfer. A MATLAB script is used to solve the equations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Neural Network Shape Recognition</h3>
+                    <div class="project-content">
+                        <img src="headshot.png" alt="Picture of Me">
+                        <div>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Hornbill Nest Temperature Data Retrieval</h3>
+                    <div class="project-content">
+                        <img src="headshot.png" alt="Picture of Me">
+                        <div>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Smoothing Filter implemented in HDL for FPGA</h3>
+                    <div class="project-content">
+                        <img src="headshot.png" alt="Picture of Me">
+                        <div>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
 
         <section id="skills">
             <h2>Skills</h2>
