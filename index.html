@@ -5,143 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murray Inglis ePortfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #441414;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 1em;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            padding: 0;
-        }
-        section {
-            margin-bottom: 2em;
-        }
-        h1, h2, h3 {
-            text-align: center;
-            padding: 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .sticky-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #f0f0f0;
-            padding: 1em;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            z-index: 999;
-            text-align: center;
-        }
-        .about {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-                        background-color: #f9f9f9; /* Light background color for better contrast */
-            padding: 20px; /* Padding inside each project box */
-            border-radius: 8px; /* Rounded corners for a modern look */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-        .about-content {
-            display: flex;
-            align-items: center;
-            background-color: #f9f9f9; /* Light background color for better contrast */
-            padding: 20px; /* Padding inside each project box */
-            border-radius: 8px; /* Rounded corners for a modern look */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-        .about-content img {
-            margin-right: 20px;
-            width: 600px; /* Adjust the width as needed */
-            height: auto;
-            object-fit: cover; /* Ensure the image covers the container */
-            border-radius: 8px; /* Rounded corners for the image */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-        .about-content div {
-            flex: 1;
-        }
-        .about-content p {
-            margin: 0; /* Remove default margins */
-            font-size: 16px; /* Adjust the font size as needed */
-            line-height: 1.5; /* Improve readability */
-            color: #000000; /* Darker text color for better contrast */
-        }
-
-        .projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Adjust the gap between projects as needed */
-        }
-
-        .project {
-            flex: 1 1 calc(50% - 20px); /* Adjust the calculation if you change the gap */
-            box-sizing: border-box;
-            background-color: #f9f9f9; /* Light background color for better contrast */
-            padding: 20px; /* Padding inside each project box */
-            border-radius: 8px; /* Rounded corners for a modern look */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-
-        .project-content {
-            display: flex;
-            align-items: center;
-            gap: 20px; /* Adjust the gap between image and text as needed */
-        }
-
-        .project img {
-            max-width: 40%; /* Ensure the image takes up a reasonable portion of the space */
-            aspect-ratio: 1 / 1; /* Ensure the image has equal width and height */
-            object-fit: cover; /* Ensure the image covers the container */
-            border-radius: 8px; /* Rounded corners for the image */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-
-        .project-content div {
-            flex: 1; /* Make the text container take up the remaining space */
-        }
-
-        .project-content p {
-            margin: 0; /* Remove default margins */
-            font-size: 16px; /* Adjust the font size as needed */
-            line-height: 1.5; /* Improve readability */
-            color: #000000; /* Darker text color for better contrast */
-        }
-        #skills {
-
-        }
-        #contact {
-
-        }
-    </style>
 </head>
+
+
+
+
 <body>
     <header>
         <h1>Murray Inglis</h1>
@@ -156,11 +24,11 @@
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
+        <section id="about" class="about-section">
             <div class="about-content">
                 <img src="headshot.png" alt="Picture of Me">
                 <div>
+                    <h2>About Me</h2>
                     <p>I am a final year Electrical and Computer Engineering student at the University of Cape Town.
                         I was born in the United Kingdom and have lived the rest of my life in Cape Town, South Africa.
                         I am writing my dissertation on a Software-Defined Radar demonstration. 
@@ -190,7 +58,7 @@
                 <div class="project">
                     <h3>Neural Network Shape Recognition</h3>
                     <div class="project-content">
-                        <img src="headshot.png" alt="Picture of Me">
+                        <img src="shape recognition.png" alt="shape recognition">
                         <div>
                             <p>
                             </p>
@@ -198,9 +66,9 @@
                     </div>
                 </div>
                 <div class="project">
-                    <h3>Hornbill Nest Temperature Data Retrieval</h3>
+                    <h3>Southern Yellow-Billed Hornbill Nest Temperature Data Retrieval</h3>
                     <div class="project-content">
-                        <img src="headshot.png" alt="Picture of Me">
+                        <img src="hornbill.png" alt="hornbill">
                         <div>
                             <p>
                             </p>
@@ -210,7 +78,7 @@
                 <div class="project">
                     <h3>Smoothing Filter implemented in HDL for FPGA</h3>
                     <div class="project-content">
-                        <img src="headshot.png" alt="Picture of Me">
+                        <img src="smoothing.png" alt="smoothing">
                         <div>
                             <p>
                             </p>
