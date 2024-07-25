@@ -135,10 +135,10 @@ footer {
     object-fit: cover; /* Ensure the image covers the container */
     border-radius: 8px; /* Rounded corners for the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: border 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 .project-content a:hover img {
-    border: 3px solid #ffcc00; /* Highlight border color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Highlight border color */
 }
 
 .project-content div {
