@@ -148,12 +148,11 @@ footer {
     color: #000000; /* Darker text color for better contrast */
 }
 
-.project-content h {
-    
-}
-#skills {
-
-}
-#contact {
-
+.skills-content {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background color for better contrast */
+    padding: 20px; /* Padding inside each project box */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }

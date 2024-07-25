@@ -26,7 +26,7 @@
     <main>
         <section id="about" class="about-section">
             <div class="about-content">
-                <img src="headshot.png" alt="Picture of Me">
+                <img src="Images/headshot.png" alt="Picture of Me">
                 <div>
                     <h2>About Me</h2>
                     <p>I am a final year Electrical and Computer Engineering student at the University of Cape Town.
@@ -43,7 +43,7 @@
                 <div class="project">
                     <h3>Raspberry Pi Acoustic Triangulation</h3>
                     <div class="project-content">
-                        <img src="AcousticTriangulation.png" alt="Acoustic Triangulation Visualisation">
+                        <img src="Images/AcousticTriangulation.png" alt="Acoustic Triangulation Visualisation">
                         <div>
                             <p>An array of 4 microphones is set up on a grid and the time delay on arrival of a sound source within
                                 the grid, 3 hyperbolic equations can be developed and solved to estimate the position of the sound
@@ -58,9 +58,13 @@
                 <div class="project">
                     <h3>Neural Network Shape Recognition</h3>
                     <div class="project-content">
-                        <img src="shape recognition.png" alt="shape recognition">
+                        <img src="Images/shape recognition.png" alt="shape recognition">
                         <div>
+                            <p>A python GUI is used to both generate labelled data and classify test data. A Convolutional Neural Network 
+                                is used to classify the shapes. The report details various approaches and validation methods to this problem.
+                            </p>
                             <p>
+                                Python libraries used for the CNN element of this project were PyTorch and sklearn.
                             </p>
                         </div>
                     </div>
@@ -68,9 +72,14 @@
                 <div class="project">
                     <h3>Southern Yellow-Billed Hornbill Nest Temperature Data Retrieval</h3>
                     <div class="project-content">
-                        <img src="hornbill.png" alt="hornbill">
+                        <img src="Images/hornbill.png" alt="hornbill">
                         <div>
+                            <p> This details a system for measuring an array of temperature sensors inside the nestbox of the Southern Yellow-Billed
+                                Hornbill. The data is transmitted via LoRa to a mainbase where it can be easily accessed.
+                            </p>
                             <p>
+                                My role in this project was to program the ESP-32 microcontrollers to read in the temperature data and package, send
+                                and receive the data via a LoRa message.
                             </p>
                         </div>
                     </div>
@@ -78,9 +87,16 @@
                 <div class="project">
                     <h3>Smoothing Filter implemented in HDL for FPGA</h3>
                     <div class="project-content">
-                        <img src="smoothing.png" alt="smoothing">
+                        <img src="Images/smoothing.png" alt="smoothing">
                         <div>
                             <p>
+                                A smoothing filter removes the noise from an input signal to reveal the underlying signal.
+                                In terms of digital signal processing, this is implemented as a moving average filter. A variation on this,
+                                a Savitsky-Golay filter, is investigated.
+                            </p>
+                            <p>
+                                My role in this project was to write the Verilog code for the moving average and Savitsky-Golay filter.
+                                I also implemented a curve fitting module using linear regression.
                             </p>
                         </div>
                     </div>
@@ -91,11 +107,13 @@
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
+            <div class="skills-content">
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                </ul>
+            </div>
         </section>
 
         <section id="contact">
@@ -107,44 +125,7 @@
     <footer>
         <p>&copy; 2024 Murray Inglis. All rights reserved.</p>
     </footer>
-    <script>
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                const headerOffset = document.querySelector('header').offsetHeight;
-                const elementPosition = targetElement.offsetTop;
-                const offsetPosition = elementPosition - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        const sections = document.querySelectorAll('main section');
-        const stickyHeader = document.createElement('div');
-        stickyHeader.classList.add('sticky-header');
-        document.body.appendChild(stickyHeader);
-
-        window.addEventListener('scroll', () => {
-            let currentSection = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 60;
-                if (pageYOffset >= sectionTop) {
-                    currentSection = section.getAttribute('id');
-                }
-            });
-
-            if (currentSection) {
-                const currentHeader = document.querySelector(`section#${currentSection} h2`).textContent;
-                stickyHeader.textContent = currentHeader;
-            }
-        });
-    </script>
+    <script src="scrollTo.js"></script>
+    <script src="resizeText.js"></script>
 </body>
 </html>
