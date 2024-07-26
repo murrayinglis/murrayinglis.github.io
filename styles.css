@@ -41,6 +41,9 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+
+
+
 .sticky-header {
     position: fixed;
     top: 0;
@@ -51,120 +54,4 @@ footer {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 999;
     text-align: center;
-}
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f9f9f9; /* Light background color for better contrast */
-    padding: 20px; /* Padding inside each project box */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-.about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 250px 36px;
-    background-color: #7e0a0a;
-}
-.about-container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;    
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-.about-content {
-    display: flex;
-    align-items: center;
-    background-color: #f9f9f9; /* Light background color for better contrast */
-    padding: 20px; /* Padding inside each project box */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-.about-content h2 {
-    margin-bottom: 20px; /* Space between heading and content */
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #000000; /* Darker text color for better contrast */
-    text-align: left;
-}
-.about-content img {
-    margin-right: 20px;
-    width: 300px; /* Adjust the width as needed */
-    height: auto;
-    object-fit: cover; /* Ensure the image covers the container */
-    border-radius: 8px; /* Rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-.about-content div {
-    flex: 1;
-}
-.about-content p {
-    margin: 0; /* Remove default margins */
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Improve readability */
-    color: #000000; /* Darker text color for better contrast */
-}
-
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust the gap between projects as needed */
-}
-
-.project {
-    flex: 1 1 calc(50% - 20px); /* Adjust the calculation if you change the gap */
-    box-sizing: border-box;
-    background-color: #f9f9f9; /* Light background color for better contrast */
-    padding: 20px; /* Padding inside each project box */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.project-content {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Adjust the gap between image and text as needed */
-}
-
-.project img {
-    max-width: 100%; /* Ensure the image takes up a reasonable portion of the space */
-    aspect-ratio: 1 / 1; /* Ensure the image has equal width and height */
-    object-fit: cover; /* Ensure the image covers the container */
-    border-radius: 8px; /* Rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: box-shadow 0.3s ease;
-}
-.project-content a:hover img {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Highlight border color */
-}
-
-.project-content div {
-    flex: 1; /* Make the text container take up the remaining space */
-}
-
-.project-content p {
-    margin: 0; /* Remove default margins */
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Improve readability */
-    color: #000000; /* Darker text color for better contrast */
-}
-
-.project-content a {
-    display: block; /* Ensures the anchor tag behaves as a block element */
-    width: 100%; /* Makes the anchor tag take up the full width of its container */
-    max-width: 300px; /* Optionally set a maximum width for the anchor */
-    height: auto; /* Automatically adjusts height based on content */
-}
-
-.skills-content {
-    display: flex;
-    align-items: center;
-    background-color: #f9f9f9; /* Light background color for better contrast */
-    padding: 20px; /* Padding inside each project box */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
