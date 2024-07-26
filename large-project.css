@@ -1,0 +1,46 @@
+.project-full-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 250px 36px;
+}
+.project-full-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;    
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.project-full-content {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background color for better contrast */
+    padding: 20px; /* Padding inside each project box */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.project-full-content h2 {
+    margin-bottom: 20px; /* Space between heading and content */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #000000; /* Darker text color for better contrast */
+    text-align: left;
+}
+.project-full-content img {
+    margin-right: 20px;
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.project-full-content div {
+    flex: 1;
+}
+.project-full-content p {
+    margin: 0; /* Remove default margins */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Improve readability */
+    color: #000000; /* Darker text color for better contrast */
+}
