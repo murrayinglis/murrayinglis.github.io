@@ -36,3 +36,9 @@ ul.logo-list li .logo {
     height: auto;
     margin-right: 10px; /* Space between logo and text */
 }
+
+ul.logo-list img .logo {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
