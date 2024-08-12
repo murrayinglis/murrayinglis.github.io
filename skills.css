@@ -23,23 +23,17 @@
 ul.logo-list {
     list-style: none;
     padding: 0;
+    margin: 20px;
 }
 
 ul.logo-list li {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 0;
 }
 
 ul.logo-list li .logo {
-    width: 24px; /* Adjust size as needed */
+    max-width: 24px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px; /* Space between logo and text */
-}
-
-ul.logo-list img .logo {
-    width: 24px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 10px; /* Space between logo and text */
-    max-width: 24px;
 }
