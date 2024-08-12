@@ -54,3 +54,17 @@
     line-height: 1.5; /* Improve readability */
     color: #000000; /* Darker text color for better contrast */
 }
+
+.cv-par {
+    margin-top: 20px; /* Adds space above the paragraph */
+    text-align: center;
+}
+
+.cv-par a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.cv-par a:hover {
+    text-decoration: underline;
+}
