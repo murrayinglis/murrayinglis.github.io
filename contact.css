@@ -25,23 +25,3 @@ body {
     color: #333;
 }
 
-
-/* Optional Styles for Responsive Design */
-@media (max-width: 600px) {
-    .contact-container {
-        padding: 10px;
-    }
-
-    .contact-form label {
-        font-size: 14px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
-    }
-
-    .contact-form input[type="submit"] {
-        font-size: 16px;
-    }
-}
