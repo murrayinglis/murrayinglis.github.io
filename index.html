@@ -45,7 +45,9 @@
 
         <section id="projects">
             <h2>Projects</h2>
+
             <div class="project-full-section">
+                <a href="https://github.com/murrayinglis/sdr-config" target="_blank" class="project-link">
                 <div class="project-full-content">
                     <img src="Images/ettus.png" alt="Ettus USRP (temp)">
                     <div>
@@ -56,107 +58,127 @@
                             </p>
                     </div>
                 </div>
+                <div class="overlay">
+                    <span>View More</span>
+                </div>
+            </a>
             </div>
+            
             <div class="projects-container">
-                
-                <div class="project">
-                    <h3>Raspberry Pi Acoustic Triangulation</h3>
-                    <div class="project-content">
-                        <a href="Reports/EEE3097S_2023_FINAL_REPORT_GROUP_8_INGMUR002_TMBTIN004_TRWDYL001.pdf" target="_blank">
-                        <img src="Images/AcousticTriangulation.png" alt="Acoustic Triangulation Visualisation">
-                        </a>
-                        <div>
-                            <p>An array of 4 microphones is set up on a grid and the time delay on arrival of a sound source within
-                                the grid, 3 hyperbolic equations can be developed and solved to estimate the position of the sound
-                                source.
-                            </p>
-                            <p>This project utilized 2 Raspberry Pi Zero W's and 4 Adafruit microphones. Python scripts are used to
-                                initiate data recording and transfer. A MATLAB script is used to solve the equations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project">
-                    <h3>Neural Network Shape Recognition</h3>
-                    <div class="project-content">
-                        <a href="Reports/EEE4114F_Report.pdf" target="_blank">
-                        <img src="Images/shape recognition.png" alt="shape recognition">
-                        </a>
-                        <div>
-                            <p>A python GUI is used to both generate labelled data and classify test data. A Convolutional Neural Network 
-                                is used to classify the shapes. The report details various approaches and validation methods to this problem.
-                            </p>
-                            <p>
-                                Python libraries used for the CNN element of this project were PyTorch and sklearn.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>Southern Yellow-Billed Hornbill Nest Temperature Data Retrieval</h3>
-                    <div class="project-content">
-                        <a href="Reports/EEE4113F_2024_Group_19_Final_Report.pdf" target="_blank">
-                        <img src="Images/hornbill.png" alt="hornbill">
-                        </a>
-                        <div>
-                            <p> This details a system for measuring an array of temperature sensors inside the nestbox of the Southern Yellow-Billed
-                                Hornbill. The data is transmitted via LoRa to a mainbase where it can be easily accessed.
-                            </p>
-                            <p>
-                                My role in this project was to program the ESP-32 microcontrollers to read in the temperature data and package, send
-                                and receive the data via a LoRa message.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>Smoothing Filter implemented in HDL for FPGA</h3>
-                    <div class="project-content">
-                        <a href="Reports/YODA_PROJECT.pdf" target="_blank">
-                        <img src="Images/smoothing.png" alt="smoothing">
-                        </a>
-                        <div>
-                            <p>
-                                A smoothing filter removes the noise from an input signal to reveal the underlying signal.
-                                In terms of digital signal processing, this is implemented as a moving average filter. A variation on this,
-                                a Savitsky-Golay filter, is investigated.
-                            </p>
-                            <p>
-                                My role in this project was to write the Verilog code for the moving average and Savitsky-Golay filter.
-                                I also implemented a curve fitting module using linear regression.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project">
-                    <h3>Power meter box for LEDWise</h3>
-                    <div class="project-content">
-                        <a>
-                        <img src="Images/smoothing.png" alt="smoothing">
-                        </a>
-                        <div>
-                            <p>
-
-                            </p>
+                <a href="Reports/EEE3097S_2023_FINAL_REPORT_GROUP_8_INGMUR002_TMBTIN004_TRWDYL001.pdf" target="_blank" class="project-link">
+                    <div class="project">
+                        <h3>Raspberry Pi Acoustic Triangulation</h3>
+                        <div class="project-content">
+                            <img src="Images/AcousticTriangulation.png" alt="Acoustic Triangulation Visualisation">
+                            <div>
+                                <p>An array of 4 microphones is set up on a grid and the time delay on arrival of a sound source within
+                                    the grid, 3 hyperbolic equations can be developed and solved to estimate the position of the sound
+                                    source.
+                                </p>
+                                <p>This project utilized 2 Raspberry Pi Zero W's and 4 Adafruit microphones. Python scripts are used to
+                                    initiate data recording and transfer. A MATLAB script is used to solve the equations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <span>View More</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project">
-                    <h3>CLI for iPay</h3>
-                    <div class="project-content">
-                        <a>
-                        <img src="Images/dlms.png" alt="DLMS">
-                        </a>
-                        <div>
-                            <p>
-
-                            </p>
+                </a>
+                <a href="Reports/EEE4114F_Report.pdf" target="_blank" class="project-link">
+                    <div class="project">
+                        <h3>Neural Network Shape Recognition</h3>
+                        <div class="project-content">
+                            <img src="Images/shape recognition.png" alt="shape recognition">
+                            <div>
+                                <p>A python GUI is used to both generate labelled data and classify test data. A Convolutional Neural Network 
+                                    is used to classify the shapes. The report details various approaches and validation methods to this problem.
+                                </p>
+                                <p>
+                                    Python libraries used for the CNN element of this project were PyTorch and sklearn.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <span>View More</span>
                         </div>
                     </div>
-                </div>
+                </a>
+                <a href="Reports/EEE4113F_2024_Group_19_Final_Report.pdf" target="_blank" class="project-link">
+                    <div class="project">
+                        <h3>Southern Yellow-Billed Hornbill Nest Temperature Data Retrieval</h3>
+                        <div class="project-content">                     
+                            <img src="Images/hornbill.png" alt="hornbill">
+                            <div>
+                                <p> This details a system for measuring an array of temperature sensors inside the nestbox of the Southern Yellow-Billed
+                                    Hornbill. The data is transmitted via LoRa to a mainbase where it can be easily accessed.
+                                </p>
+                                <p>
+                                    My role in this project was to program the ESP-32 microcontrollers to read in the temperature data and package, send
+                                    and receive the data via a LoRa message.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="Reports/YODA_PROJECT.pdf" target="_blank" class="project-link">
+                    <div class="project">
+                        <h3>Smoothing Filter implemented in HDL for FPGA</h3>
+                        <div class="project-content">                       
+                            <img src="Images/smoothing.png" alt="smoothing">
+                            <div>
+                                <p>
+                                    A smoothing filter removes the noise from an input signal to reveal the underlying signal.
+                                    In terms of digital signal processing, this is implemented as a moving average filter. A variation on this,
+                                    a Savitsky-Golay filter, is investigated.
+                                </p>
+                                <p>
+                                    My role in this project was to write the Verilog code for the moving average and Savitsky-Golay filter.
+                                    I also implemented a curve fitting module using linear regression.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="Reports/YODA_PROJECT.pdf" target="_blank" class="project-link">
+                    <div class="project">
+                        <h3>Power meter box for LEDWise</h3>
+                        <div class="project-content">
+                            <img src="Images/smoothing.png" alt="smoothing">
+                            <div>
+                                <p>
+                                    aa
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="Reports/YODA_PROJECT.pdf" target="_blank" class="project-link">
+                    <div class="project">
+                        <h3>CLI for iPay</h3>
+                        <div class="project-content">
+                            <img src="Images/dlms.png" alt="DLMS">
+                            <div>
+                                <p>
+                                    aa
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <span>View More</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
