@@ -41,4 +41,5 @@ ul.logo-list img .logo {
     width: 24px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px; /* Space between logo and text */
+    max-width: 24px;
 }
